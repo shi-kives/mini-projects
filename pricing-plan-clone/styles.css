@@ -36,7 +36,9 @@ span {
     padding-top: 19px;
     padding-bottom: 13px;
     background-image: linear-gradient(to bottom, #2c3e50, #bdc3c7);
-
+    border: 3px solid #e50914;
+    position: relative; /*needed for the recommended ribbon*/
+    z-index: 2;
 }
 #premium{
     padding-top: 7px;
@@ -44,6 +46,21 @@ span {
     background-image: linear-gradient(to bottom, #aa389b, #bdc3c7);
 
 }
+.ribbon{
+    font-size: 20px;
+    position: absolute;
+    top: -12px;
+    font-weight: bold;
+    color: white;
+    background-color: #e50914;
+    width: 200px;
+    padding: 5px 7px;
+    border-radius: 20px;
+    text-align: center;
+}
 .planCard:hover{
     box-shadow: 0px 0px 30px #ffffff98;
+}
+#standard:hover{
+    transform: scale(1.03); /*makes the card pop out more*/
 }
